@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Empreendedor - Regularização MEI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .gov-blue { background-color: #004580; }
+        .gov-yellow { background-color: #ffcc00; }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="gov-blue text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-white text-blue-900 font-bold px-2 py-1 rounded text-xs">gov.br</div>
+                <span class="text-sm font-semibold">Portal do Empreendedor</span>
+            </div>
+            <div class="text-xs opacity-80 flex items-center gap-1">
+                <i data-lucide="lock" class="w-3 h-3"></i> Conexão Criptografada
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4 max-w-2xl">
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden border-t-8 border-yellow-500">
+            <div class="p-6">
+                <div class="flex items-center gap-3 mb-6 text-red-600">
+                    <i data-lucide="alert-triangle" class="w-8 h-8"></i>
+                    <h1 class="text-xl font-bold uppercase">Aviso de Pendência Financeira</h1>
+                </div>
+
+                <div class="space-y-4 text-gray-700">
+                    <div class="bg-gray-50 p-3 rounded border text-xs font-mono text-gray-500 mb-4">
+                        Referência: DAS-2026 | Status: Pendente de Pagamento
+                    </div>
+
+                    <p class="text-sm leading-relaxed">
+                        Identificamos que o seu CNPJ MEI possui uma <strong>pendência de taxa de manutenção anual</strong>. A ausência deste pagamento resultará na suspensão automática do seu CNPJ e perda dos benefícios previdenciários.
+                    </p>
+                    
+                    <div class="bg-red-50 border-l-4 border-red-600 p-4 my-6">
+                        <p class="text-xs font-bold text-red-800 uppercase">Valor para Regularização:</p>
+                        <p class="text-3xl font-black text-red-600">R$ 147,50</p>
+                        <p class="text-xs text-red-700 mt-1">Vencimento: Hoje (Pagamento Imediato)</p>
+                    </div>
+
+                    <p class="text-sm">
+                        Para evitar a baixa do CNPJ e a migração para Microempresa (com impostos maiores), realize o pagamento via <strong>PIX Compensação Instantânea</strong>.
+                    </p>
+                </div>
+
+                <div class="mt-8 space-y-5">
+                    <div class="relative">
+                        <label class="block text-xs font-bold text-gray-500 uppercase mb-2">CNPJ do Empreendedor</label>
+                        <input type="text" placeholder="00.000.000/0001-00" class="w-full p-3 border-2 border-blue-900 rounded-lg text-sm outline-none font-medium">
+                    </div>
+
+                    <a href="https://pagseguropix.org/c/mei-regularizacao" 
+                       class="block w-full text-center gov-blue text-white font-bold py-4 rounded-lg hover:bg-blue-800 transition-all shadow-lg flex items-center justify-center gap-2 uppercase text-lg">
+                        <i data-lucide="credit-card"></i>
+                        Gerar PIX de Regularização
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-12 text-center text-gray-500 text-xs pb-8">
+        &copy; 2026 Governo Federal - Receita Federal do Brasil
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
